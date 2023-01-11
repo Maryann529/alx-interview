@@ -1,21 +1,24 @@
 #!/usr/bin/python3
-"""
-Contains a method that calculates the fewest number of operations
-needed to result in exactly n H characters in the file.
-"""
+'''
+Given a number n, write a method that calculates
+the fewest number of operations needed to result in
+exactly n H characters in the file.
+'''
 
 
 def minOperations(n):
+    """minOperations is a method that calculates
+    the fewest number of operations needed to result
+    in exactly n H characters
+    Args:
+        n (int): amount of H
+    Return:
+        minimum number of operations (an integer)
     """
-    Returns the fewest number of operations needed to result in exactly
-    n H characters in the file.
-    """
-    operations = 0
-    min_operations = 2
-    while n > 1:
-        while n % min_operations == 0:
-            operations += min_operations
-            n /= min_operations
-        min_operations += 1
-    return operations
-    
+    minOp, div = 0, 2
+    while isinstance(n, int) and n > 1:
+        while n % div:
+            div += 1
+        minOp += div
+        n = int(n / div)
+    return minOp
