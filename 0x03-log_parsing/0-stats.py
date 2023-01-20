@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 fsize_sum = 0
 status_obg = dict()
-regex = r"^\d.*\s\-\s\[\d*.*\]"GET.*\"\s(\d*)\s(\d*)$*
-stat_codes = [200, 301, 400, 401, 403, 404, 405, 500)
+regex = r"^\d.*\s\-\s\[\d*.*\]\s\"GET.*\"\s(\d*)\s(\d*)$"
+stat_codes = [200, 301, 400, 401, 403, 404, 405, 500]
 
 
 def parseLogs():
