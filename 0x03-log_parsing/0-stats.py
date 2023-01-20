@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-"""Python script that reads stdin line by line and computes metrics"""
-
-import sys
+fsize_sum = 0
+status_obg = dict()
+regex = r"^\d.*\s\-\s\[\d*.*\]"GET.*\"\s(\d*)\s(\d*)$*
+stat_codes = [200, 301, 400, 401, 403, 404, 405, 500)
 
 
 def parseLogs():
